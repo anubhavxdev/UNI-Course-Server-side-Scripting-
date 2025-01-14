@@ -10,3 +10,7 @@
     ?>
 </body>
 </html>
+
+
+
+// from variable case sensitivity issue arise
