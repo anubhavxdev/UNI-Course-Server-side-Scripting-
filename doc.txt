@@ -1,4 +1,17 @@
 14/01/25
+
+Path to open the PhP server in your browser
+1. In Htdocs folder create dir or file of your own name with .php extension and try to run it in your localhost.
+2. if adding any pages try to add routes or in the url https://localhost/index.php/jaiswal.php (jaiswal.php - created file)
+
+Commands:-
+    1. echo - Its used to print the string or variables (just like displaying the outputs in your web page)
+
+    <?php
+        //Try to add your code over here 
+    ?>
+
+
 variable
 comments
 Basic Setup
