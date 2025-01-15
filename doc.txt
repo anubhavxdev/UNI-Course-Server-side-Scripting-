@@ -11,7 +11,24 @@ Commands:-
         //Try to add your code over here 
     ?>
 
+Cooments
+
+<?php
+// This is a single-line comment
+# This is also a single-line comment
+
+<?php
+/*
+This is a multi-line comment
+that spans multiple lines
+*/
+
+<?php
+/**
+ * This is a DocBlock comment
+ * It is often used for function and class documentation
+ */
+
+
 
 variable
-comments
-Basic Setup
