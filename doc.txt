@@ -35,3 +35,85 @@ that spans multiple lines
 variables
   1. $var_name = 18
   2. $var2_name = "Anubhav"
+
+/**
+ * This script demonstrates various PHP functionalities including:
+ * - Variable declaration and usage
+ * - String interpolation and concatenation
+ * - Arithmetic operations
+ * - Type checking and type casting
+ * - Array declaration and usage
+ * - Constants declaration using `define` and `const`
+ * - Predefined constants like `__LINE__`, `__FILE__`, and `__DIR__`
+ * - Function declaration and usage
+ * - Variable type conversion
+ * - Checking variable types using `var_dump` and type checking functions
+ * - Demonstrating boolean conversion of different values
+ * - Performing arithmetic operations with type casting
+ *
+ * The script outputs various data types and their values, demonstrates type casting,
+ * and shows how to use constants and predefined constants in PHP.
+ */
+<?php
+// Variable declaration and usage
+$integerVar = 18;
+$stringVar = "Anubhav";
+
+// String interpolation and concatenation
+echo "Hello, my name is $stringVar and I am $integerVar years old.\n";
+echo 'Hello, my name is ' . $stringVar . ' and I am ' . $integerVar . " years old.\n";
+
+// Arithmetic operations
+$sum = $integerVar + 2;
+echo "Sum: $sum\n";
+
+// Type checking and type casting
+$floatVar = (float)$integerVar;
+echo "Float value: $floatVar\n";
+var_dump($floatVar);
+
+// Array declaration and usage
+$arrayVar = array(1, 2, 3, 4, 5);
+echo "Array values: ";
+print_r($arrayVar);
+
+// Constants declaration using `define` and `const`
+define("PI", 3.14);
+const GRAVITY = 9.8;
+echo "PI: " . PI . "\n";
+echo "Gravity: " . GRAVITY . "\n";
+
+// Predefined constants like `__LINE__`, `__FILE__`, and `__DIR__`
+echo "This is line " . __LINE__ . " in file " . __FILE__ . " located in directory " . __DIR__ . "\n";
+
+// Function declaration and usage
+function add($a, $b) {
+    return $a + $b;
+}
+echo "Addition result: " . add(5, 10) . "\n";
+
+// Variable type conversion
+$boolVar = (bool)$integerVar;
+echo "Boolean value: ";
+var_dump($boolVar);
+
+// Checking variable types using `var_dump` and type checking functions
+var_dump(is_int($integerVar));
+var_dump(is_string($stringVar));
+var_dump(is_array($arrayVar));
+
+// Demonstrating boolean conversion of different values
+$zero = 0;
+$emptyString = "";
+$nullVar = null;
+echo "Boolean conversion of 0: ";
+var_dump((bool)$zero);
+echo "Boolean conversion of empty string: ";
+var_dump((bool)$emptyString);
+echo "Boolean conversion of null: ";
+var_dump((bool)$nullVar);
+
+// Performing arithmetic operations with type casting
+$sumWithCasting = $integerVar + (int)$floatVar;
+echo "Sum with casting: $sumWithCasting\n";
+?>

@@ -1,4 +1,22 @@
 // Date: 16-01-2025
+/**
+ * This script demonstrates various PHP functionalities including:
+ * - Variable declaration and usage
+ * - String interpolation and concatenation
+ * - Arithmetic operations
+ * - Type checking and type casting
+ * - Array declaration and usage
+ * - Constants declaration using `define` and `const`
+ * - Predefined constants like `__LINE__`, `__FILE__`, and `__DIR__`
+ * - Function declaration and usage
+ * - Variable type conversion
+ * - Checking variable types using `var_dump` and type checking functions
+ * - Demonstrating boolean conversion of different values
+ * - Performing arithmetic operations with type casting
+ *
+ * The script outputs various data types and their values, demonstrates type casting,
+ * and shows how to use constants and predefined constants in PHP.
+ */
 
 <!DOCTYPE html>
 <html lang="en">
