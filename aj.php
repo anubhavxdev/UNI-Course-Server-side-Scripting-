@@ -1,5 +1,5 @@
-// Date: 16-01-2025
-/**
+<!-- // Date: 16-01-2025 -->
+<!-- /**
  * This script demonstrates various PHP functionalities including:
  * - Variable declaration and usage
  * - String interpolation and concatenation
@@ -16,7 +16,7 @@
  *
  * The script outputs various data types and their values, demonstrates type casting,
  * and shows how to use constants and predefined constants in PHP.
- */
+ */ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,262 +27,467 @@
 </head>
 <body>
     <?php
- $x= 15;
- $name = "Anubhav";
- echo $x;
- echo "<br>";
- echo $name; 
- echo "<br>";
+//  $x= 15;
+//  $name = "Anubhav";
+//  echo $x;
+//  echo "<br>";
+//  echo $name; 
+//  echo "<br>";
 
 
 
- $data = "PHP";
- echo "I am learning $data !";
- echo "<br>";
- echo "I am learning" .$data. "!";
- echo "<br>";
+//  $data = "PHP";
+//  echo "I am learning $data !";
+//  echo "<br>";
+//  echo "I am learning" .$data. "!";
+//  echo "<br>";
 
- $value_1 = 14;
- $value_2 = 5;
- echo $value_1 + $value_2;
- echo "<br>";
-
-
- $number = 11;
- var_dump($number);
- echo "<br>";
+//  $value_1 = 14;
+//  $value_2 = 5;
+//  echo $value_1 + $value_2;
+//  echo "<br>";
 
 
+//  $number = 11;
+//  var_dump($number);
+//  echo "<br>";
 
- $number2 = 20.15;
- var_dump($number2);
- echo "<br>";
 
 
-    $x = "Hello world!";
-    $y = 'Hello world!';
+//  $number2 = 20.15;
+//  var_dump($number2);
+//  echo "<br>";
 
-    var_dump($x);
+
+//     $x = "Hello world!";
+//     $y = 'Hello world!';
+
+//     var_dump($x);
+//     echo "<br>";
+//     var_dump($y);
+//     echo "<br>";
+
+
+//     $year = '2025';
+//     $wish = 'welcome to LPU';
+
+//     var_dump($wish);
+//     echo "<br>";
+//     var_dump($year);
+//     echo "<br>";
+
+
+//     $friend = array("Ankush","Priyanshu","Sawan","Gaurav","Shashank","Vedant","Rishi",);
+//     var_dump($friend);
+//     echo "<br>";
+
+
+
+//     $questions = "How was your day?";
+//     $questions = null;
+//     var_dump($questions);
+//     echo "<br>";
+
+//     echo strlen("Hello world!");
+//     echo "<br>";
+
+
+
+//     define("wishes","Good Morning!");
+//     echo wishes;
+//     echo "<br>";
+
+
+
+//     const greetings = "Good Evening!";
+//     echo greetings;
+//     echo "<br>";
+
+//     echo constant("wishes");
+//     echo "<br>";
+//     echo constant("greetings");
+//     echo "<br>";
+
+
+
+//     define("couses",[
+//         "CSE",
+//         "ECE",
+//         "ME",
+//         "CE",
+//         "PE",
+//         "EE",
+//         "MBA",
+//         "BBA",
+//         "BCA",
+//         "MCA"]);
+
+//     echo couses[0];
+//     echo "<br>";
+
+
+
+//     const c = array(
+//         "HTML",
+//         "CSS",
+//         "JS",
+//         "PHP",
+//         "JAVA",
+//     );
+//     echo c[1];
+//     echo "<br>";
+
+
+
+//     echo "The current line number is".__LINE__.".";
+//     echo"<br>";
+//     echo "Current PHP script name is".__FILE__.".";
+//     echo "<br>";
+
+//     echo "Directory of the Current PHP script is".__DIR__.".";
+//     echo "<br>";
+
+
+//     function hello(){
+//         $a="Hello World!";
+//         echo "$a. The function name is ".__FUNCTION__.".";
+//     }
+//     hello();
+
+
+
+//     $a = 5;
+//     $b = 5.35;
+//     $c = "Hello";
+//     $d = true;
+//     $e = NULL;
+
+    
+//     $a = (string) $a;
+//     $b = (string) $b;
+//     $c = (string) $c;
+//     $d = (string) $d;
+//     $e = (string) $e;
+
+
+//     var_dump($a);
+//     echo "<br>";
+//     var_dump($b);
+//     echo "<br>";
+//     var_dump($c);
+//     echo "<br>";
+//     var_dump($d);
+//     echo "<br>";
+//     var_dump($e);
+//     echo "<br>";
+
+
+
+//     var_dump(40);
+//     echo "<br>";
+//     var_dump("aman");
+//     echo "<br>";
+//     var_dump("2.22");
+//     echo "<br>";
+//     var_dump(false);
+//     echo "<br>";
+//     var_dump([21,13,16]);
+//     echo "<br>";
+//     var_dump(NULL);
+//     echo "<br>";
+
+//     $x = $y = $z = "Anubhav";
+//     echo $x;
+//     echo $y;
+//     echo $z;
+
+//     $x = 5985;
+//     echo"<br>";
+//     var_dump(is_int($x));
+//     echo"<br>";
+//     var_dump(is_integer($x));
+
+//     $y = 59.85;
+//     var_dump(is_float($y));
+//     echo "<br>";
+
+// //TYPE CASTING
+
+//     $saiyam = "25 kilometere";
+//     $saiyam = (int) $saiyam;
+//     echo $saiyam;
+//     var_dump(is_int($saiyam));
+//     echo"<br>";
+
+
+//     $rishi = "kilometere 25";
+//     $rishi = (int) $rishi;
+//     echo $rishi;
+//     echo"<br>";
+
+//     $am = "25 kilometere";
+//     $am = (FLOAT) $am;
+//     echo $am;
+//     var_dump(is_int($am));
+//     echo"<br>";
+    
+
+
+//     $i = 5;
+//     $i = (bool) $i;
+//     echo $i;    
+//     echo "<br>";
+
+//     $ii = 5.34;
+//     $ii = (bool) $ii;
+//     echo $ii;
+//     echo "<br>";
+
+//     $iii = 0;
+//     $ii = (bool) $iii;
+//     echo $ii;
+//     echo "<br>";
+
+//     $iv = -1;
+//     echo $iv;
+//     echo "<br>";
+
+//     $v = 0.1;
+//     $v = (bool) $v;
+//     echo $v;
+//     echo "<br>";
+
+//     $vii = "hello";
+//     $vii = (bool) $vii;
+//     echo $vii;
+//     echo "<br>";
+
+//     $viii = "";
+//     $viii = (bool) $viii;
+//     echo $viii;
+//     echo "<br>";
+
+//     $ix = true;
+//     $ix = (bool) $ix;
+//     echo $ix;
+//     echo "<br>";
+
+//     $x = NULL;
+//     $x = (bool) $x;
+//     echo $x;
+//     echo "<br>";
+//     echo "<br>";
+
+
+//     $string = "10";
+//     $int = 5;
+//     $result = (int)$string + $int;
+//     echo $result;
+
+
+//     echo "<br>";
+
+    //Operators
+
+    $x = 10;
+    $y = 10;
+    $add = $x + $y;
+    echo $add;
     echo "<br>";
-    var_dump($y);
+    $sub = $x - $y;
+    echo $sub;
+    echo "<br>";
+    $mul = $x * $y;
+    echo $mul;
+    echo "<br>";
+    $div = $x / $y;
+    echo $div;
+    echo "<br>";
+    $mod = $x % $y;
+    echo $mod;
+    echo "<br>";
+
+    //Assignment Operators
+
+    $x = 10;
+    $x += 5;
+    echo $x;
+    echo "<br>";
+
+    $x = 10;
+    $x -= 5;
+    echo $x;
+    echo "<br>";
+
+    $x = 10;
+    $x *= 5;
+    echo $x;
+    echo "<br>";
+
+    $x = 10;
+    $x /= 5;
+    echo $x;
+    echo "<br>";
+
+    $x = 10;
+    $x %= 5;
+    echo $x;
     echo "<br>";
 
 
-    $year = '2025';
-    $wish = 'welcome to LPU';
+    //Comparison Operators
+    $a = 10;
+    $b = 20;
 
-    var_dump($wish);
-    echo "<br>";
-    var_dump($year);
-    echo "<br>";
-
-
-    $friend = array("Ankush","Priyanshu","Sawan","Gaurav","Shashank","Vedant","Rishi",);
-    var_dump($friend);
+    var_dump($a == $b); // Equal
     echo "<br>";
 
-
-
-    $questions = "How was your day?";
-    $questions = null;
-    var_dump($questions);
+    var_dump($a === $b); // Identical
     echo "<br>";
 
-    echo strlen("Hello world!");
+    var_dump($a != $b); // Not equal
     echo "<br>";
 
-
-
-    define("wishes","Good Morning!");
-    echo wishes;
+    var_dump($a <> $b); // Not equal
     echo "<br>";
 
-
-
-    const greetings = "Good Evening!";
-    echo greetings;
+    var_dump($a !== $b); // Not identical
     echo "<br>";
 
-    echo constant("wishes");
+    var_dump($a < $b); // Less than
     echo "<br>";
-    echo constant("greetings");
+
+    var_dump($a > $b); // Greater than
+    echo "<br>";
+
+    var_dump($a <= $b); // Less than or equal to
+    echo "<br>";
+
+    var_dump($a >= $b); // Greater than or equal to
+    echo "<br>";
+
+    var_dump($a <=> $b); // Spaceship operator
     echo "<br>";
 
 
+    //increment & decrement operators
 
-    define("couses",[
-        "CSE",
-        "ECE",
-        "ME",
-        "CE",
-        "PE",
-        "EE",
-        "MBA",
-        "BBA",
-        "BCA",
-        "MCA"]);
+    $x = 10;
+    echo ++$x; // Pre-increment
+    echo "<br>";
 
-    echo couses[0];
+    $x = 10;
+    echo $x++; // Post-increment
+    echo "<br>";
+    echo $x; // Value after post-increment
+    echo "<br>";
+
+    $x = 10;
+    echo --$x; // Pre-decrement
+    echo "<br>";
+
+    $x = 10;
+    echo $x--; // Post-decrement
+    echo "<br>";
+    echo $x; // Value after post-decrement
+    echo "<br>";
+
+    //String Operators
+
+    // String Operators
+
+    $str1 = "Hello";
+    $str2 = " World!";
+    $concatenation = $str1 . $str2; // Concatenation
+    echo $concatenation;
+    echo "<br>";
+
+    $str1 .= $str2; // Concatenation assignment
+    echo $str1;
+    echo "<br>";
+
+    //Conditional Operators
+    // Conditional (Ternary) Operator
+    $age = 20;
+    $status = ($age >= 18) ? "Adult" : "Minor";
+    echo $status;
+    echo "<br>";
+
+    // Null Coalescing Operator
+    $name = "Priyanshu";
+    $defaultName = "Guest";
+    $userName = $name ?? $defaultName;
+    echo $userName;
     echo "<br>";
 
 
+    //Logical Operators
+    // Logical Operators
 
-    const c = array(
-        "HTML",
-        "CSS",
-        "JS",
-        "PHP",
-        "JAVA",
-    );
-    echo c[1];
+    $a = true;
+    $b = false;
+
+    var_dump($a && $b); // And
     echo "<br>";
 
-
-
-    echo "The current line number is".__LINE__.".";
-    echo"<br>";
-    echo "Current PHP script name is".__FILE__.".";
+    var_dump($a || $b); // Or
     echo "<br>";
 
-    echo "Directory of the Current PHP script is".__DIR__.".";
+    var_dump(!$a); // Not
     echo "<br>";
 
+    var_dump($a xor $b); // Xor
+    echo "<br>";
 
-    function hello(){
-        $a="Hello World!";
-        echo "$a. The function name is ".__FUNCTION__.".";
-    }
-    hello();
-
-
-
-    $a = 5;
-    $b = 5.35;
-    $c = "Hello";
+    $c = true;
     $d = true;
-    $e = NULL;
 
-    
-    $a = (string) $a;
-    $b = (string) $b;
-    $c = (string) $c;
-    $d = (string) $d;
-    $e = (string) $e;
+    var_dump($c and $d); // And
+    echo "<br>";
 
+    var_dump($c or $d); // Or
+    echo "<br>";
 
-    var_dump($a);
+    var_dump($c && $d); // And
     echo "<br>";
-    var_dump($b);
+
+    var_dump($c || $d); // Or
     echo "<br>";
-    var_dump($c);
+
+    var_dump(!$c); // Not
     echo "<br>";
-    var_dump($d);
-    echo "<br>";
-    var_dump($e);
+
+    var_dump($c xor $d); // Xor
     echo "<br>";
 
 
+   
+    // control Structures
 
-    var_dump(40);
-    echo "<br>";
-    var_dump("aman");
-    echo "<br>";
-    var_dump("2.22");
-    echo "<br>";
-    var_dump(false);
-    echo "<br>";
-    var_dump([21,13,16]);
-    echo "<br>";
-    var_dump(NULL);
-    echo "<br>";
+    $year = 2021; 
 
-    $x = $y = $z = "Anubhav";
-    echo $x;
-    echo $y;
-    echo $z;
+    if (($year % 4 == 0 && $year % 100 != 0) || ($year % 400 == 0)) {
+        echo "$year is a leap year.";
+    } else {
+        echo "$year is not a leap year.";
+    }
 
-    $x = 5985;
-    echo"<br>";
-    var_dump(is_int($x));
-    echo"<br>";
-    var_dump(is_integer($x));
-
-    $y = 59.85;
-    var_dump(is_float($y));
     echo "<br>";
 
-//TYPE CASTING
+    $score = 85;
+    $attendance = 90;
 
-    $saiyam = "25 kilometere";
-    $saiyam = (int) $saiyam;
-    echo $saiyam;
-    var_dump(is_int($saiyam));
-    echo"<br>";
-
-
-    $rishi = "kilometere 25";
-    $rishi = (int) $rishi;
-    echo $rishi;
-    echo"<br>";
-
-    $am = "25 kilometere";
-    $am = (FLOAT) $am;
-    echo $am;
-    var_dump(is_int($am));
-    echo"<br>";
-    
-
-
-    $i = 5;
-    $i = (bool) $i;
-    echo $i;    
-    echo "<br>";
-
-    $ii = 5.34;
-    $ii = (bool) $ii;
-    echo $ii;
-    echo "<br>";
-
-    $iii = 0;
-    $ii = (bool) $iii;
-    echo $ii;
-    echo "<br>";
-
-    $iv = -1;
-    echo $iv;
-    echo "<br>";
-
-    $v = 0.1;
-    $v = (bool) $v;
-    echo $v;
-    echo "<br>";
-
-    $vii = "hello";
-    $vii = (bool) $vii;
-    echo $vii;
-    echo "<br>";
-
-    $viii = "";
-    $viii = (bool) $viii;
-    echo $viii;
-    echo "<br>";
-
-    $ix = true;
-    $ix = (bool) $ix;
-    echo $ix;
-    echo "<br>";
-
-    $x = NULL;
-    $x = (bool) $x;
-    echo $x;
-    echo "<br>";
-    echo "<br>";
-
-
-    $string = "10";
-    $int = 5;
-    $result = (int)$string + $int;
-    echo $result;
+    if ($score >= 90 && $attendance >= 90) {
+        echo "Grade: A and Attendance: $attendance%";
+    } elseif ($score >= 80 && $attendance >= 80) {
+        echo "Grade: B and Attendance: $attendance%";
+    } elseif ($score >= 70 && $attendance >= 70) {
+        echo "Grade: C and Attendance: $attendance%";
+    } elseif ($score >= 60 && $attendance >= 60) {
+        echo "Grade: D and Attendance: $attendance%";
+    } else {
+        echo "Grade: F";
+    }
 
 
 
