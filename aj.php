@@ -289,205 +289,210 @@
 
     //Operators
 
-    $x = 10;
-    $y = 10;
-    $add = $x + $y;
-    echo $add;
-    echo "<br>";
-    $sub = $x - $y;
-    echo $sub;
-    echo "<br>";
-    $mul = $x * $y;
-    echo $mul;
-    echo "<br>";
-    $div = $x / $y;
-    echo $div;
-    echo "<br>";
-    $mod = $x % $y;
-    echo $mod;
-    echo "<br>";
+    // $x = 10;
+    // $y = 10;
+    // $add = $x + $y;
+    // echo $add;
+    // echo "<br>";
+    // $sub = $x - $y;
+    // echo $sub;
+    // echo "<br>";
+    // $mul = $x * $y;
+    // echo $mul;
+    // echo "<br>";
+    // $div = $x / $y;
+    // echo $div;
+    // echo "<br>";
+    // $mod = $x % $y;
+    // echo $mod;
+    // echo "<br>";
 
-    //Assignment Operators
+    // //Assignment Operators
 
-    $x = 10;
-    $x += 5;
-    echo $x;
-    echo "<br>";
+    // $x = 10;
+    // $x += 5;
+    // echo $x;
+    // echo "<br>";
 
-    $x = 10;
-    $x -= 5;
-    echo $x;
-    echo "<br>";
+    // $x = 10;
+    // $x -= 5;
+    // echo $x;
+    // echo "<br>";
 
-    $x = 10;
-    $x *= 5;
-    echo $x;
-    echo "<br>";
+    // $x = 10;
+    // $x *= 5;
+    // echo $x;
+    // echo "<br>";
 
-    $x = 10;
-    $x /= 5;
-    echo $x;
-    echo "<br>";
+    // $x = 10;
+    // $x /= 5;
+    // echo $x;
+    // echo "<br>";
 
-    $x = 10;
-    $x %= 5;
-    echo $x;
-    echo "<br>";
-
-
-    //Comparison Operators
-    $a = 10;
-    $b = 20;
-
-    var_dump($a == $b); // Equal
-    echo "<br>";
-
-    var_dump($a === $b); // Identical
-    echo "<br>";
-
-    var_dump($a != $b); // Not equal
-    echo "<br>";
-
-    var_dump($a <> $b); // Not equal
-    echo "<br>";
-
-    var_dump($a !== $b); // Not identical
-    echo "<br>";
-
-    var_dump($a < $b); // Less than
-    echo "<br>";
-
-    var_dump($a > $b); // Greater than
-    echo "<br>";
-
-    var_dump($a <= $b); // Less than or equal to
-    echo "<br>";
-
-    var_dump($a >= $b); // Greater than or equal to
-    echo "<br>";
-
-    var_dump($a <=> $b); // Spaceship operator
-    echo "<br>";
+    // $x = 10;
+    // $x %= 5;
+    // echo $x;
+    // echo "<br>";
 
 
-    //increment & decrement operators
+    // //Comparison Operators
+    // $a = 10;
+    // $b = 20;
 
-    $x = 10;
-    echo ++$x; // Pre-increment
-    echo "<br>";
+    // var_dump($a == $b); // Equal
+    // echo "<br>";
 
-    $x = 10;
-    echo $x++; // Post-increment
-    echo "<br>";
-    echo $x; // Value after post-increment
-    echo "<br>";
+    // var_dump($a === $b); // Identical
+    // echo "<br>";
 
-    $x = 10;
-    echo --$x; // Pre-decrement
-    echo "<br>";
+    // var_dump($a != $b); // Not equal
+    // echo "<br>";
 
-    $x = 10;
-    echo $x--; // Post-decrement
-    echo "<br>";
-    echo $x; // Value after post-decrement
-    echo "<br>";
+    // var_dump($a <> $b); // Not equal
+    // echo "<br>";
 
-    //String Operators
+    // var_dump($a !== $b); // Not identical
+    // echo "<br>";
 
-    // String Operators
+    // var_dump($a < $b); // Less than
+    // echo "<br>";
 
-    $str1 = "Hello";
-    $str2 = " World!";
-    $concatenation = $str1 . $str2; // Concatenation
-    echo $concatenation;
-    echo "<br>";
+    // var_dump($a > $b); // Greater than
+    // echo "<br>";
 
-    $str1 .= $str2; // Concatenation assignment
-    echo $str1;
-    echo "<br>";
+    // var_dump($a <= $b); // Less than or equal to
+    // echo "<br>";
 
-    //Conditional Operators
-    // Conditional (Ternary) Operator
-    $age = 20;
-    $status = ($age >= 18) ? "Adult" : "Minor";
-    echo $status;
-    echo "<br>";
+    // var_dump($a >= $b); // Greater than or equal to
+    // echo "<br>";
 
-    // Null Coalescing Operator
-    $name = "Priyanshu";
-    $defaultName = "Guest";
-    $userName = $name ?? $defaultName;
-    echo $userName;
-    echo "<br>";
+    // var_dump($a <=> $b); // Spaceship operator
+    // echo "<br>";
 
 
-    //Logical Operators
-    // Logical Operators
+    // //increment & decrement operators
 
-    $a = true;
-    $b = false;
+    // $x = 10;
+    // echo ++$x; // Pre-increment
+    // echo "<br>";
 
-    var_dump($a && $b); // And
-    echo "<br>";
+    // $x = 10;
+    // echo $x++; // Post-increment
+    // echo "<br>";
+    // echo $x; // Value after post-increment
+    // echo "<br>";
 
-    var_dump($a || $b); // Or
-    echo "<br>";
+    // $x = 10;
+    // echo --$x; // Pre-decrement
+    // echo "<br>";
 
-    var_dump(!$a); // Not
-    echo "<br>";
+    // $x = 10;
+    // echo $x--; // Post-decrement
+    // echo "<br>";
+    // echo $x; // Value after post-decrement
+    // echo "<br>";
 
-    var_dump($a xor $b); // Xor
-    echo "<br>";
+    // //String Operators
 
-    $c = true;
-    $d = true;
+    // // String Operators
 
-    var_dump($c and $d); // And
-    echo "<br>";
+    // $str1 = "Hello";
+    // $str2 = " World!";
+    // $concatenation = $str1 . $str2; // Concatenation
+    // echo $concatenation;
+    // echo "<br>";
 
-    var_dump($c or $d); // Or
-    echo "<br>";
+    // $str1 .= $str2; // Concatenation assignment
+    // echo $str1;
+    // echo "<br>";
 
-    var_dump($c && $d); // And
-    echo "<br>";
+    // //Conditional Operators
+    // // Conditional (Ternary) Operator
+    // $age = 20;
+    // $status = ($age >= 18) ? "Adult" : "Minor";
+    // echo $status;
+    // echo "<br>";
 
-    var_dump($c || $d); // Or
-    echo "<br>";
+    // // Null Coalescing Operator
+    // $name = "Priyanshu";
+    // $defaultName = "Guest";
+    // $userName = $name ?? $defaultName;
+    // echo $userName;
+    // echo "<br>";
 
-    var_dump(!$c); // Not
-    echo "<br>";
 
-    var_dump($c xor $d); // Xor
-    echo "<br>";
+    // //Logical Operators
+    // // Logical Operators
+
+    // $a = true;
+    // $b = false;
+
+    // var_dump($a && $b); // And
+    // echo "<br>";
+
+    // var_dump($a || $b); // Or
+    // echo "<br>";
+
+    // var_dump(!$a); // Not
+    // echo "<br>";
+
+    // var_dump($a xor $b); // Xor
+    // echo "<br>";
+
+    // $c = true;
+    // $d = true;
+
+    // var_dump($c and $d); // And
+    // echo "<br>";
+
+    // var_dump($c or $d); // Or
+    // echo "<br>";
+
+    // var_dump($c && $d); // And
+    // echo "<br>";
+
+    // var_dump($c || $d); // Or
+    // echo "<br>";
+
+    // var_dump(!$c); // Not
+    // echo "<br>";
+
+    // var_dump($c xor $d); // Xor
+    // echo "<br>";
 
 
    
-    // control Structures
+    // // control Structures
 
-    $year = 2021; 
+    // $year = 2021; 
 
-    if (($year % 4 == 0 && $year % 100 != 0) || ($year % 400 == 0)) {
-        echo "$year is a leap year.";
-    } else {
-        echo "$year is not a leap year.";
-    }
+    // if (($year % 4 == 0 && $year % 100 != 0) || ($year % 400 == 0)) {
+    //     echo "$year is a leap year.";
+    // } else {
+    //     echo "$year is not a leap year.";
+    // }
 
-    echo "<br>";
+    // echo "<br>";
 
-    $score = 85;
-    $attendance = 90;
+    // $score = 85;
+    // $attendance = 90;
 
-    if ($score >= 90 && $attendance >= 90) {
-        echo "Grade: A and Attendance: $attendance%";
-    } elseif ($score >= 80 && $attendance >= 80) {
-        echo "Grade: B and Attendance: $attendance%";
-    } elseif ($score >= 70 && $attendance >= 70) {
-        echo "Grade: C and Attendance: $attendance%";
-    } elseif ($score >= 60 && $attendance >= 60) {
-        echo "Grade: D and Attendance: $attendance%";
-    } else {
-        echo "Grade: F";
-    }
+    // if ($score >= 90 && $attendance >= 90) {
+    //     echo "Grade: A and Attendance: $attendance%";
+    // } elseif ($score >= 80 && $attendance >= 80) {
+    //     echo "Grade: B and Attendance: $attendance%";
+    // } elseif ($score >= 70 && $attendance >= 70) {
+    //     echo "Grade: C and Attendance: $attendance%";
+    // } elseif ($score >= 60 && $attendance >= 60) {
+    //     echo "Grade: D and Attendance: $attendance%";
+    // } else {
+    //     echo "Grade: F";
+    // }
+
+
+    // 30/31/25
+
+    
 
 
 
