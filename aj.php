@@ -491,11 +491,75 @@
 
 
     // 30/31/25
+    //Date and time functions
 
-    
+    // date_default_timezone_set("Asia/Kolkata");
+
+    // $d = date("D");
+    // if($d == "Thu") {
+    //     echo"Its a Thursday";
+    // } else {
+    //     echo "Its not a Thursday";
+    // }
+
+    // $t = date("H");
+    // echo $t;
+    // echo"<br>";
+    // if($t < "20") {
+    //     echo "Have a good day!";
+    // } else {
+    //     echo "Have a good night!";
+    // }
+    // echo"<br>";
+
+    // echo "The current time is " . date("h:i:sa");
+    // echo"<br>";
+    // $a = date("D");
+    // echo $a;
 
 
+    //if-else-elseif
 
- ?>
+    // if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //     $name = $_POST['name'];
+    //     $age = $_POST['age'];
+
+    //     if (empty($name) || empty($age)) {
+    //         echo "Please fill in all fields.";
+    //     } else {
+    //         echo "Hello, $name. You are $age years old.";
+    //     }
+    // }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $marks = $_POST['age'];
+
+        if (empty($name) || empty($marks)) {
+            echo "Please fill in all fields.";
+        } else {
+            echo "Hello, $name. ";
+            if ($marks >= 90) {
+                echo "Congratulations You have scored an A grade.";
+            } elseif ($marks >= 80) {
+                echo "Very Good You have scored a B grade.";
+            } elseif ($marks >= 70) {
+                echo "Good You have scored a C grade.";
+            } elseif ($marks >= 60) {
+                echo "Study hard You have scored a D grade.";
+            } else {
+                echo "Go and take admission in LPU You have scored an F grade.";
+            }
+        }
+    }
+
+?>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    Name: <input type="text" name="name"><br>
+    Marks <input type="text" name="age"><br>
+    <input type="submit">
+</form>
+
 </body>
 </html>
