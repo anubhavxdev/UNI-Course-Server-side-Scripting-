@@ -191,11 +191,205 @@
         echo $fruit . "<br>";
     }
 
+    
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_Combine()</h3>";
+
+    $name = ["Ankush","Priyanshu","Pintu","Anubhav","Gaurav","Gagandeep","Virat"];
+    $marks = ["56","62","75","80","96","91","88"];
+    $c = array_combine($name, $marks);
+    print_r($c);
+    echo "<br>";
+    
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_Chunks()</h3>";
+    $course = array("a"=>"PHP", "b"=>"Java", "c"=>"Python", "d"=>"C++", "e"=>"C#");
+    print_r(array_chunk($course, 2, true));
+    echo "<br>";
+    echo "<br>";
+    
+    echo "another example";
+    $course = array("a"=> "PHP", "b"=> "Java", "c"=> "Python", "d"=> "C++", "e"=> "C#");
+    print_r(array_chunk($course, 2, true));
+
+     
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_Counts_value()</h3>";
+    echo "<br>";
+
+    $a=array("Cow","Cat","Dog","Buffalo","Dog");
+    print_r($a);
+    echo "<br>";
+
+      
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_difff</h3>";
+    echo "<br>";
+
+    $a1 = ["a" => "red", "b" => "green", "c" => "yellow", "d" => "blue"];
+    $a2 = ["e" => "red", "f" => "green", "g" => "purple"];
+    $a3 = ["h" => "mango", "i" => "cheery"];
+    $res=array_diff(array_keys($a1), array_keys($a2));
+    $result=array_diff($a2,$a1);
+    print_r($result);
+    print_r($res) ;
+
+      
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_intersect</h3>";
+    echo "<br>";
+
+    $a1=["a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow"];
+    $a2=["e"=> "seagreen","f"=> "white","g"=> "mint"];
+    $a3=["red","green","blue"];
+    $result=array_intersect($a1,$a2,$a3);
+    print_r($result);
+
+
+     
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_merge</h3>";
+    echo "<br>";
+
+    $array1 = array("color" => "red", 2, 4);
+    $array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
+    $result = array_merge($array1, $array2);
+    print_r($result);
 
     
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_merge</h3>";
+    echo "<br>";
+
+
+    $a = array("red","green","blue","yellow");
+    array_pop($a);
+    print_r($a);
+
+    $a=array("a"=>"red","b"=>"green","c"=>"blue");
+    array_pop($a);
+    echo"<br>";
+    print_r($a);
+
+    
+     
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_reverse</h3>";
+    echo "<br>";
+
+    $colors = array("red", "green", "blue", "yellow");
+    $reversedColors = array_reverse($colors);
+    print_r($reversedColors);
+
+
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+    echo "<h3>Array_search</h3>";
+    echo "<br>";
+
+    $colors = array("red", "green", "blue", "yellow");
+    $search = array_search("blue", $colors);
+    if ($search !== false) {
+        echo "Found 'blue' at index: " . $search;
+    } else {
+        echo "'blue' not found in the array.";
+    }
+
+
+    
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+
+    echo "<h3>Array_slice</h3>";
+    echo "<br>";
+
+    $input = array("a", "b", "c", "d", "e");
+    $slice = array_slice($input, 2, 2);
+    print_r($slice);
+
+    
+    echo"<br>";
+    echo "<hr>";
+    echo "<br>";
+    echo "<hr>";
+    echo "<br>";
+
+
+    echo "<h3>Array_column</h3>";
+    echo "<br>";
+    
+    $records = array(
+        array(
+            'id' => 1,
+            'name' => 'John',
+            'age' => 28,
+        ),
+        array(
+            'id' => 2,
+            'name' => 'Jane',
+            'age' => 24,
+        ),
+        array(
+            'id' => 3,
+            'name' => 'Doe',
+            'age' => 30,
+        ),
+    );
+
+    $names = array_column($records, 'name');
+    print_r($names);
+
     ?>
     </main>
     <footer style="background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); height:auto; width: auto; padding: 1px;">
-        <h3 style="text-align: center; color: white;">&copy; Anubhav jaiswal 2025</h3>
+        <h3 style="text-align: center; color: white;">&copy; Anubhav Jaiswal 2025</h3>
 </body>
 </html>
