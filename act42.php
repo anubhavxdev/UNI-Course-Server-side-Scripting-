@@ -1,24 +1,46 @@
 <?php
-// Set a cookie
-if (!isset($_COOKIE['username'])) {
-    // If the cookie is not set, set it with a default value
-    $username = "Guest";
-    setcookie("username", $username, time() + (86400 * 7), "/"); // Expires in 7 days
-} else {
-    // Retrieve the cookie value
-    $username = $_COOKIE['username'];
+// Define variables and set to empty values
+$name = $email = $password = "";
+$nameErr = $emailErr = $passwordErr = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Validate and sanitize name
+    if (empty($_POST["name"])) {
+        $nameErr = "Name is required";
+    } else {
+        $name = sanitize_input($_POST["name"]);
+        if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+            $nameErr = "Only letters and white space allowed";
+        }
+    }
+
+    // Validate and sanitize email
+    if (empty($_POST["email"])) {
+        $emailErr = "Email is required";
+    } else {
+        $email = sanitize_input($_POST["email"]);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailErr = "Invalid email format";
+        }
+    }
+
+    // Validate and sanitize password
+    if (empty($_POST["password"])) {
+        $passwordErr = "Password is required";
+    } else {
+        $password = sanitize_input($_POST["password"]);
+        if (strlen($password) < 6) {
+            $passwordErr = "Password must be at least 6 characters long";
+        }
+    }
 }
 
-// Update the cookie if a new name is submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['new_username'])) {
-    $username = htmlspecialchars($_POST['new_username']);
-    setcookie("username", $username, time() + (86400 * 7), "/"); // Update cookie with new value
-}
-
-// Delete the cookie if requested
-if (isset($_POST['delete_cookie'])) {
-    setcookie("username", "", time() - 3600, "/"); // Expire the cookie
-    $username = "Guest"; // Reset to default
+// Function to sanitize input
+function sanitize_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
 ?>
 
@@ -27,19 +49,29 @@ if (isset($_POST['delete_cookie'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalized Greeting</title>
+    <title>Form Validation</title>
 </head>
 <body>
-    <h1>Welcome, <?php echo $username; ?>!</h1>
-
-    <form method="post">
-        <label for="new_username">Enter your name:</label>
-        <input type="text" id="new_username" name="new_username" required>
-        <button type="submit">Update Name</button>
+    <h2>PHP Form Validation Example</h2>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        Name: <input type="text" name="name" value="<?php echo $name; ?>">
+        <span style="color: red;"><?php echo $nameErr; ?></span>
+        <br><br>
+        Email: <input type="text" name="email" value="<?php echo $email; ?>">
+        <span style="color: red;"><?php echo $emailErr; ?></span>
+        <br><br>
+        Password: <input type="password" name="password">
+        <span style="color: red;"><?php echo $passwordErr; ?></span>
+        <br><br>
+        <input type="submit" value="Submit">
     </form>
 
-    <form method="post">
-        <button type="submit" name="delete_cookie">Delete Cookie</button>
-    </form>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && !$nameErr && !$emailErr && !$passwordErr) {
+        echo "<h3>Form Submitted Successfully</h3>";
+        echo "<p>Name: $name</p>";
+        echo "<p>Email: $email</p>";
+    }
+    ?>
 </body>
 </html>
